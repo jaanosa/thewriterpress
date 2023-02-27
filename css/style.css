@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    height: 100%;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1;
+    font-size: 16px;
+    color: #2a2a2a;
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #2a2a2a;
+}
+
+.color-1 {
+    color: #F17A7E;
+}
+
+.color-2 {
+    color: #FFC94A;
+}
+
+.bg-1 {
+    background-color: #F17A7E;
+}
+
+.bg-2 {
+    background-color: #FFC94A;
+}
+
+.bc-1 {
+    border-color: #F17A7E !important;
+}
+
+.bc-2 {
+    border-color: #FFC94A !important;
+}
+
+.publishing_packages .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link,
+.publishing_packages .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:hover
+ {
+    background-color: unset;
+    color: inherit;
+    border-color: #FFC94A;
+}
+
+.publishing_packages .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: inherit;
+    background-color: #FFC94A;  
+    border-color: #FFC94A; 
+}
+
+
+
