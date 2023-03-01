@@ -1,0 +1,106 @@
+[
+    {
+        "Inclusions": "Unlimited Pictures\/ Artworks",
+        "Basic": "Yes",
+        "Advanced": "Yes",
+        "Premium": "Yes",
+        "Elite": "Yes"
+    },
+    {
+        "Inclusions": "Cover Design",
+        "Basic": "No",
+        "Advanced": "Yes",
+        "Premium": "Yes",
+        "Elite": "Yes"
+    },
+    {
+        "Inclusions": "Content Evaluation",
+        "Basic": "Yes",
+        "Advanced": "Yes",
+        "Premium": "Yes",
+        "Elite": "Yes"
+    },
+    {
+        "Inclusions": "Editorial Assessment",
+        "Basic": "Yes",
+        "Advanced": "Yes",
+        "Premium": "Yes",
+        "Elite": "Yes"
+    },
+    {
+        "Inclusions": "ISBN",
+        "Basic": "Yes",
+        "Advanced": "Yes",
+        "Premium": "Yes",
+        "Elite": "Yes"
+    },
+    {
+        "Inclusions": "US Copyright",
+        "Basic": "Yes",
+        "Advanced": "Yes",
+        "Premium": "Yes",
+        "Elite": "Yes"
+    },
+    {
+        "Inclusions": "paperback copy"
+    },
+    {
+        "Inclusions": "hardback copy"
+    },
+    {
+        "Inclusions": "Author Interview",
+        "Basic": "Add-On",
+        "Advanced": "Add-On",
+        "Premium": "Yes",
+        "Elite": "Yes"
+    },
+    {
+        "Inclusions": "Email Marketing Services",
+        "Basic": "Yes",
+        "Advanced": "Yes",
+        "Premium": "Yes",
+        "Elite": "Yes"
+    },
+    {
+        "Inclusions": "Website w\/ eCommerce",
+        "Basic": "Add-On",
+        "Advanced": "Yes",
+        "Premium": "Yes",
+        "Elite": "Yes"
+    },
+    {
+        "Inclusions": "Amazon Author Page Set Up w\/ SEO",
+        "Basic": "Add-On",
+        "Advanced": "Yes",
+        "Premium": "Yes",
+        "Elite": "Yes"
+    },
+    {
+        "Inclusions": "Social Media Fan Page Set-Up",
+        "Basic": "Yes",
+        "Advanced": "Yes",
+        "Premium": "Yes",
+        "Elite": "Yes"
+    },
+    {
+        "Inclusions": "Author\/Book Feature on TWP Website",
+        "Basic": "Yes",
+        "Advanced": "Yes",
+        "Premium": "Yes",
+        "Elite": "Yes"
+    },
+    {
+        "Inclusions": "Worldwide Distribution",
+        "Basic": "Yes",
+        "Advanced": "Yes",
+        "Premium": "Yes",
+        "Elite": "Yes"
+    },
+    {
+        "Inclusions": "Author Royalty Page",
+        "Basic": "Yes",
+        "Advanced": "Yes",
+        "Premium": "Yes",
+        "Elite": "Yes"
+    }
+]
