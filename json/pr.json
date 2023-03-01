@@ -1,6 +1,7 @@
 [
     {
-        "Service": "Social Media Marketing"
+        "Service": "Social Media Marketing",
+        "Highlight": 1
     },
     {
         "Service": "Number of Posts\/month",
@@ -51,7 +52,8 @@
         "Great": "Ad boosting (depends on the author's budget)"
     },
     {
-        "Service": "Website Design"
+        "Service": "Website Design",
+        "Highlight": 1
     },
     {
         "Good": "4-page website (Homepage, Book page, About Page, Contact Page)",
@@ -95,13 +97,16 @@
     },
     {
         "Service": "Add on",
-        "Good": "4 blog posts\/month (1500 words each post) $400\/mo"
+        "Good": "4 blog posts\/month (1500 words each post) $400\/mo",
+        "Highlight": 1
     },
     {
-        "Good": "1 guest blog\/month (1500 words on authoritative sites) $500\/mo"
+        "Good": "1 guest blog\/month (1500 words on authoritative sites) $500\/mo",
+        "Highlight": 1
     },
     {
-        "Service": "Book Reviews"
+        "Service": "Book Reviews",
+        "Highlight": 1
     },
     {
         "Good": "10 verified Amazon Reviews",
@@ -110,10 +115,12 @@
     },
     {
         "Service": "Add on",
-        "Good": "Book page optimization (target audience research, keyword research, book description editing, headline\/tagline writing\/rewriting)"
+        "Good": "Book page optimization (target audience research, keyword research, book description editing, headline\/tagline writing\/rewriting)",
+        "Highlight": 1
     },
     {
-        "Service": "Email Marketing"
+        "Service": "Email Marketing",
+        "Highlight": 1
     },
     {
         "Good": "2 email blasts monthly",

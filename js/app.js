@@ -67,28 +67,29 @@ fetchJSON().then(([full_color, black_white, pr]) => {
     }
 
     if (pr) {
-        var bw_str =
+        var pr_str =
             `<thead class="align-middle bg-1 text-white">
             <tr>
-                <th scope="col">Inclusions</th>
+                <th class="col-5" scope="col">Inclusions</th>
                 <th scope="col">(Basic)<br>$599</th>
                 <th scope="col">(Advanced)<br>$1,799</th>
                 <th scope="col">(Premium)<br>$2,449</th>
             </tr>
         </thead>
         <tbody>`;
+        var highlighted = 'bg-1 text-white';
         pr.forEach(item => {
-            bw_str +=
-                `<tr>
+            pr_str +=
+            `<tr class="${item.Highlight == '1' ? highlighted : ''}">
                 <td>${item.Service != undefined ? item.Service : ''}</td>
                 <td>${item.Good != undefined ? item.Good : '' }</td>
                 <td>${item.Grand != undefined ? item.Grand : ''}</td>
                 <td>${item.Great != undefined ? item.Great : ''}</td>
             </tr>`;
         });
-        bw_str += `</tbody>`;
+        pr_str += `</tbody>`;
 
-        document.getElementById("table_pr").innerHTML += bw_str;
+        document.getElementById("table_pr").innerHTML += pr_str;
     }
 
 }).catch(error => {
@@ -105,3 +106,6 @@ const swiper = new Swiper('.swiper', {
         pauseOnMouseEnter: true,
     }
 });
+
+// Initialize AOS
+AOS.init();
