@@ -13,57 +13,89 @@ async function fetchJSON() {
 
 fetchJSON().then(([full_color, black_white, pr]) => {
     if (full_color) {
-        var full_color_str =
-            `<thead class="align-middle bg-2">
-            <tr>
-                <th scope="col">Inclusions</th>
-                <th scope="col">(Basic)<br>$899</th>
-                <th scope="col">(Advanced)<br>$1,999</th>
-                <th scope="col">(Premium)<br>$2,499</th>
-                <th scope="col">(Elite)<br>$4,899</th>
-            </tr>
-        </thead>
-        <tbody>`;
+        var full_color_str = '';
         full_color.forEach(item => {
-            full_color_str +=
-                `<tr>
-                <td>${item.Inclusions}</td>
-                <td>${item.Basic != undefined ? item.Basic : '' }</td>
-                <td>${item.Advanced != undefined ? item.Advanced : ''}</td>
-                <td>${item.Premium != undefined ? item.Premium : ''}</td>
-                <td>${item.Elite != undefined ? item.Elite : ''}</td>
-            </tr>`;
-        });
-        full_color_str += `</tbody>`;
+            full_color_str =
+            `<div class="card-item p-2">
+                <div class="card-item-wrapper bc-2">
+                    <div class="card-header p-3 bg-2 text-center">
+                        <span class="fw-bold">${item.Type}</span>
+                        <h2>${item.Price}</h2>
+                    </div>
+                    <div class="card-item-body p-3">
+                        <ul class="pb-3">`;
+                        if (item.Values) {
+                            var item_values = item.Values;
+                            item_values.forEach(value => {
+                                if (value.Value && value.Value !== 'No') {
+                                    if (value.Value === 'Add-On') {
+                                        full_color_str +=
+                                        `<li class="add-on"> <i class="bi bi-plus-square-fill"></i>
+                                            ${value.Inclusions}
+                                        </li>`;
+                                    }else{
+                                        full_color_str +=
+                                        `<li> <i class="bi bi-check-square"></i>
+                                            ${value.Inclusions}
+                                        </li>`;
+                                    }
+                                }
+                            });
+                        }
+            full_color_str += 
+                        `</ul>
+                        <button class="btn rounded-0 text-white bg-2 w-100 p-2 fw-bold text-uppercase" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>`;
 
-        document.getElementById("table_full_color").innerHTML += full_color_str;
+            document.getElementById("table_full_color").innerHTML += full_color_str;
+        });
     }
 
     if (black_white) {
-        var bw_str =
-            `<thead class="align-middle bg-2">
-            <tr>
-                <th scope="col">Inclusions</th>
-                <th scope="col">(Basic)<br>$599</th>
-                <th scope="col">(Advanced)<br>$1,799</th>
-                <th scope="col">(Premium)<br>$2,449</th>
-                <th scope="col">(Elite)<br>$4,599</th>
-            </tr>
-        </thead>
-        <tbody>`;
+        var bw_str = '';
         black_white.forEach(item => {
-            bw_str +=
-                `<tr>
-                <td>${item.Inclusions}</td>
-                <td>${item.Basic != undefined ? item.Basic : '' }</td>
-                <td>${item.Advanced != undefined ? item.Advanced : ''}</td>
-                <td>${item.Premium != undefined ? item.Premium : ''}</td>
-                <td>${item.Elite != undefined ? item.Elite : ''}</td>
-            </tr>`;
-        });
-        bw_str += `</tbody>`;
+            bw_str =
+            `<div class="card-item p-2">
+                <div class="card-item-wrapper bc-2">
+                    <div class="card-header p-3 bg-2 text-center">
+                        <span class="fw-bold">${item.Type}</span>
+                        <h2>${item.Price}</h2>
+                    </div>
+                    <div class="card-item-body p-3">
+                        <ul class="pb-3">`;
+                        if (item.Values) {
+                            var item_values = item.Values;
+                            item_values.forEach(value => {
+                                if (value.Value && value.Value !== 'No') {
+                                    if (value.Value === 'Add-On') {
+                                        bw_str +=
+                                        `<li class="add-on"> <i class="bi bi-plus-square-fill"></i>
+                                            ${value.Inclusions}
+                                        </li>`;
+                                    }else{
+                                        bw_str +=
+                                        `<li> <i class="bi bi-check-square"></i>
+                                            ${value.Inclusions}
+                                        </li>`;
+                                    }
+                                }
+                            });
+                        }
+                        bw_str += 
+                        `</ul>
+                        <button class="btn rounded-0 text-white bg-2 w-100 p-2 fw-bold text-uppercase" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>`;
 
-        document.getElementById("table_black_white").innerHTML += bw_str;
+            document.getElementById("table_black_white").innerHTML += bw_str;
+        });
     }
 
     if (pr) {
