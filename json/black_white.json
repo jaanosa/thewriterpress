@@ -1,6 +1,6 @@
 [   
     {
-        "Type": "Basic",
+        "Type": "(Basic)",
         "Price": "$599",
         "Month": "",
         "Values": [{
@@ -67,7 +67,7 @@
         }]
     },
     {
-        "Type": "Advanced",
+        "Type": "(Advanced)",
         "Price": "$1,799",
         "Month": "",
         "Values": [{
@@ -134,7 +134,7 @@
         }]
     },
     {
-        "Type": "Premium",
+        "Type": "(Premium)",
         "Price": "$2,449",
         "Month": "",
         "Values": [{
@@ -201,7 +201,7 @@
         }]
     },
     {
-        "Type": "Elite",
+        "Type": "(Elite)",
         "Price": "$4,599",
         "Month": "",
         "Values": [{

@@ -27,10 +27,15 @@ fetchJSON().then(([full_color, black_white, pr]) => {
                         if (item.Values) {
                             var item_values = item.Values;
                             item_values.forEach(value => {
-                                if (value.Value && value.Value !== 'No') {
+                                if (value.Value) {
                                     if (value.Value === 'Add-On') {
                                         full_color_str +=
                                         `<li class="add-on"> <i class="bi bi-plus-square-fill"></i>
+                                            ${value.Inclusions}
+                                        </li>`;
+                                    }else if(value.Value === 'No'){
+                                        full_color_str +=
+                                        `<li> <i class="bi bi-x-square-fill"></i>
                                             ${value.Inclusions}
                                         </li>`;
                                     }else{
@@ -70,10 +75,15 @@ fetchJSON().then(([full_color, black_white, pr]) => {
                         if (item.Values) {
                             var item_values = item.Values;
                             item_values.forEach(value => {
-                                if (value.Value && value.Value !== 'No') {
+                                if (value.Value) {
                                     if (value.Value === 'Add-On') {
                                         bw_str +=
                                         `<li class="add-on"> <i class="bi bi-plus-square-fill"></i>
+                                            ${value.Inclusions}
+                                        </li>`;
+                                    }else if(value.Value === 'No'){
+                                        bw_str +=
+                                        `<li> <i class="bi bi-x-square-fill"></i>
                                             ${value.Inclusions}
                                         </li>`;
                                     }else{

@@ -99,6 +99,11 @@ a {
     font-weight: 600;
 }
 
+.nav-item-sp {
+    display: none;
+    font-size: 25px;
+}
+
 .banner {
     position: relative;
 }
@@ -221,8 +226,15 @@ section {
     }
 }
 
-
 @media only screen and (max-width: 768px) {
+    .nav-item-sp {
+        display: block;
+    }
+
+    .nav-item-menu {
+        display: none !important;
+    }
+
     section .header.pb-5 {
         padding-bottom: 1em !important;
     }

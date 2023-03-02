@@ -17,21 +17,31 @@
         <div class="container">
             <div class="_nav-item">
                 <div class="logo-wrapper">
-                    <img class="ratio ratio-1x1 img-fluid" src="./img/logo.png" alt="">
+                    <a href="#">
+                        <!-- <img class="ratio ratio-1x1 img-fluid" src="./img/logo.png" alt=""> -->
+                        <span>thewriterpress.</span>
+                    </a>
                 </div>
             </div>
             <div class="_nav-item">
-                <ul class="d-flex">
-                    <li class="p-4">
-                        <a class="active" href="#banner">Home</a>
-                    </li>
-                    <li class="p-4">
-                        <a href="">Services</a>
-                    </li>
-                </ul>
-                <button class="btn rounded-0 bg-reverse-1 w-100 p-2 fw-bold text-uppercase" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    GET STARTED
-                </button>
+                <div class="nav-item-sp">
+                    <span>
+                        <i class="bi bi-list"></i>
+                    </span>
+                </div>
+                <div class="nav-item-menu d-flex">
+                    <ul class="d-flex">
+                        <li class="p-3">
+                            <a class="active" href="#banner">Home</a>
+                        </li>
+                        <li class="p-3">
+                            <a href="#publishing_packages">Packages</a>
+                        </li>
+                    </ul>
+                    <button class="btn rounded-0 bg-reverse-1 w-100 ps-3 pe-3 fw-bold text-uppercase" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        GET STARTED
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -197,7 +207,7 @@
         <div class="division-item w-50 p-1 bg-2"></div>
         <div class="division-item w-50 p-1 bg-1"></div>
     </div>
-    <section class="publishing_packages">
+    <section class="publishing_packages" id="publishing_packages">
         <div class="d-flex align-items-center p-5">
             <div class="container-md overflow-auto">
                 <div class="header text-center pb-5" data-aos="fade-down">
