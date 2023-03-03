@@ -106,8 +106,9 @@ a {
     align-items: center;
 }
 
-._nav-item .active {
-    font-weight: 600;
+.nav-item-menu,
+.nav-item-menu button {
+    font-weight: 500;
 }
 
 .nav-item-sp {
@@ -228,7 +229,7 @@ section {
 
 @media only screen and (min-width: 1400px) {
     .container {
-        max-width: 1140px;
+        max-width: 1016px;
     }
 }
 
