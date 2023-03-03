@@ -1,3 +1,9 @@
+// Initialize navbar behaviour
+window.addEventListener('scroll',function(){
+    var navbar = document.getElementById('nav_bar');
+    navbar.classList.toggle('sticky',window.scrollY > 0);
+});
+
 // Fetch json files and append to respective tables
 async function fetchJSON() {
     const [colorResponse, bwResponse, prResponse] = await Promise.all([

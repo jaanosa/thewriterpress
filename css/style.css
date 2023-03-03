@@ -86,8 +86,19 @@ a {
     border-color: #FFC94A !important;
 }
 
+.navbar {
+    transition: 0.5s;
+}
+
+.navbar.sticky {
+    width: 100%;
+    position: fixed;
+    background: white;
+    z-index: 2;
+}
+
 .logo-wrapper {
-    width: 20%;
+    width: 25%;
 }
 
 ._nav-item {
@@ -220,13 +231,17 @@ section {
         max-width: 1140px;
     }
 }
-@media only screen and (max-width: 991px) and (min-width: 601px) {
-    button.w-50 {
-        width: 100% !important;
+
+@media only screen and (max-width: 1024px) {
+    .banner-arrow {
+        display: none;
+    }
+    .banner-txt.p-3 {
+        padding: 2em !important;
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
     .nav-item-sp {
         display: block;
     }
@@ -234,8 +249,20 @@ section {
     .nav-item-menu {
         display: none !important;
     }
+}
 
-    section .header.pb-5 {
+@media only screen and (max-width: 991px) and (min-width: 601px) {
+    button.w-50 {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar>.container {
+        flex-wrap: unset;
+    }
+
+    section .header.pb-2 {
         padding-bottom: 1em !important;
     }
 
