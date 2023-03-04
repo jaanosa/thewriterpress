@@ -1,7 +1,23 @@
-// Initialize navbar behaviour
+// Initialize navbar behaviour upon scroll
 window.addEventListener('scroll',function(){
     var navbar = document.getElementById('nav_bar');
     navbar.classList.toggle('sticky',window.scrollY > 0);
+});
+
+// Initialize navbar behaviour when mobile
+var hamburger  = document.getElementById('nav-item-sp');
+var menu_close = document.getElementById('nav-item-menu-close');
+var menu_item  = document.getElementById('nav-item-menu-sp');
+var body       = document.getElementById('html_body');
+
+hamburger.addEventListener('click',function(){
+    menu_item.classList.toggle('show');
+    body.classList.toggle('sp_show');
+});
+
+menu_close.addEventListener('click',function(){
+    menu_item.classList.toggle('show');
+    body.classList.toggle('sp_show');
 });
 
 // Fetch json files and append to respective tables
@@ -115,29 +131,69 @@ fetchJSON().then(([full_color, black_white, pr]) => {
     }
 
     if (pr) {
-        var pr_str =
-            `<thead class="align-middle bg-1 text-white">
-            <tr>
-                <th class="col-5" scope="col">Inclusions</th>
-                <th scope="col">(Basic)<br>$599</th>
-                <th scope="col">(Advanced)<br>$1,799</th>
-                <th scope="col">(Premium)<br>$2,449</th>
-            </tr>
-        </thead>
-        <tbody>`;
-        var highlighted = 'bg-1 text-white';
+        var pr_str = '';
         pr.forEach(item => {
-            pr_str +=
-            `<tr class="${item.Highlight == '1' ? highlighted : ''}">
-                <td>${item.Service != undefined ? item.Service : ''}</td>
-                <td>${item.Good != undefined ? item.Good : '' }</td>
-                <td>${item.Grand != undefined ? item.Grand : ''}</td>
-                <td>${item.Great != undefined ? item.Great : ''}</td>
-            </tr>`;
-        });
-        pr_str += `</tbody>`;
+            pr_str =
+            `<div class="card-item p-2">
+                <div class="card-item-wrapper bc-1">
+                    <div class="card-header p-3 bg-1 text-center text-white">
+                        <span class="fw-bold">${item.Type}</span>
+                        <h2>${item.Price}</h2>
+                        <p>${item.Month}</p>
+                    </div>
+                    <div class="card-item-body p-3">`;
+                        if (item.Services) {
+                            var item_services = item.Services;
+                            item_services.forEach(services => {
+                                pr_str +=
+                                `   <h5 class="text-center">
+                                        ${services.Service}
+                                    </h5>
+                                `;
+                                if (services.Values) {
+                                    pr_str += `<ul class="pb-3">`
+                                    var service = services.Values
+                                    service.forEach(value => {
+                                        if (value) {
+                                          
+                                            var inclusion = value.Inclusion ? value.Inclusion : '';
+                                            var inc_value = value.Value ? value.Value : '';
+                                            var included  = value.Included ? value.Included === 'No' ? '' : value.Included : '';
 
-        document.getElementById("table_pr").innerHTML += pr_str;
+                                            if (inclusion.includes('Add on')) {
+                                                pr_str +=
+                                                `<li class="add-on"> <i class="bi bi-plus-square-fill"></i>
+                                                    ${inc_value} ${inclusion} 
+                                                </li>`;
+                                            }else if(included === ''){
+                                                pr_str +=
+                                                `<li> <i class="bi bi-x-square-fill"></i>
+                                                    ${inc_value} ${inclusion}
+                                                </li>`;
+                                            }else{
+                                                pr_str +=
+                                                `<li> <i class="bi bi-check-square"></i>
+                                                    ${inc_value} ${inclusion}
+                                                </li>`;
+                                            }
+                                    
+                                        }
+                                    });
+                                    pr_str += `</ul>`
+                                }
+                            });
+                        }
+                        pr_str += 
+                        `<button class="btn rounded-0 text-white bg-1 w-100 p-2 fw-bold text-uppercase" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>`;
+
+            document.getElementById("table_pr").innerHTML += pr_str;
+        });
+
     }
 
 }).catch(error => {

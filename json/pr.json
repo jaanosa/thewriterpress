@@ -1,145 +1,413 @@
 [
     {
-        "Service": "Social Media Marketing",
-        "Highlight": 1
+        "Type" : "Good",
+        "Price" : "$4,999",
+        "Month": "3 months",
+        "Services":
+        [
+            {
+                "Service": "Social Media Marketing",
+                "Values" : 
+                [
+                    {
+                        "Included": "Yes",
+                        "Inclusion": "Number of Posts\/month",
+                        "Value": 24
+                    },
+                    {
+                        "Included": "Yes",
+                        "Inclusion": "Social Platforms",
+                        "Value": "Facebook &amp; Instagram"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Inclusion": "Dedicated account manager",
+                        "Value": "Up to 2 hours of monthly consultation"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Inclusion": "Page monitoring (messages, reviews, and comments)",
+                        "Value": "12 days in a month"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Inclusion": "Original, engaging content",
+                        "Value": "text, graphics, 15-second video"
+                    },
+                    {
+                        "Inclusion": "Optional Add on",
+                        "Value": "$100\/month per platform (Pinterest, Twitter, Goodreads)"
+                    },
+                    {
+                        "Inclusion": "Optional Add on",
+                        "Value": "$150 for tailor-made book promotional video (15 seconds max)"
+                    },
+                    {
+                        "Inclusion": "Optional Add on",
+                        "Value": "Ad boosting (depends on the author's budget)"
+                    }
+                ]
+            },
+            {
+                "Service": "Website Design",
+                "Values" : 
+                [
+                    {
+                        "Included": "Yes",
+                        "Value": "4-page website (Homepage, Book page, About Page, Contact Page)"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Domain name ($12\/year)"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Secure hosting ($120\/year)"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "SSL Certificate ($82\/year)"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Up to 4 elegantly designed themes"
+                    },
+                    {
+                        "Included": "No",
+                        "Value": "PayPal Checkout for Book Page"
+                    },
+                    {
+                        "Included": "No",
+                        "Value": "Custom domain email address ($72/year)"
+                    },
+                    {
+                        "Included": "No",
+                        "Value": "Email List Building"
+                    },
+                    {
+                        "Included": "No",
+                        "Value": "Monthly newsletter for subscribers"
+                    },
+                    {
+                        "Inclusion": "Add on",
+                        "Value": "4 blog posts\/month (1500 words each post) $400\/mo"
+                    },
+                    {
+                        "Inclusion": "Add on",
+                        "Value": "1 guest blog\/month (1500 words on authoritative sites) $500\/mo"
+                    }
+                ]
+            },
+            {
+                "Service": "Book Reviews",
+                "Values" : 
+                [
+                    {
+                        "Included": "Yes",
+                        "Value": "10 verified Amazon Reviews"
+                    },
+                    {
+                        "Inclusion": "Add on",
+                        "Value": "Book page optimization (target audience research, keyword research, book description editing, headline\/tagline writing\/rewriting)"
+                    }
+                ]
+            },
+            {
+                "Service": "Email Marketing",
+                "Values" : 
+                [
+                    {
+                        "Included": "Yes",
+                        "Value": "2 email blasts monthly"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Email design and copy"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Exclusive access to emails of book fair attendees"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Campaign performance report"
+                    }
+                ]
+            }
+        ]
     },
     {
-        "Service": "Number of Posts\/month",
-        "Good": 24,
-        "Grand": 120,
-        "Great": 330
+        "Type" : "Grand",
+        "Price" : "$9,999",
+        "Month": "6 months",
+        "Services":
+        [
+            {
+                "Service": "Social Media Marketing",
+                "Values" : 
+                [
+                    {
+                        "Included": "Yes",
+                        "Inclusion": "Number of Posts\/month",
+                        "Value": 120
+                    },
+                    {
+                        "Included": "Yes",
+                        "Inclusion": "Social Platforms",
+                        "Value": "Facebook &amp; Instagram"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Inclusion": "Dedicated account manager",
+                        "Value": "Up to 3 hours of monthly consultation"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Inclusion": "Page monitoring (messages, reviews, and comments)",
+                        "Value": "24 days in a month"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Inclusion": "Original, engaging content",
+                        "Value": "text, graphics, 15-second video"
+                    },
+                    {
+                        "Inclusion": "Optional Add on",
+                        "Value": "$100\/month per platform (Pinterest, Twitter, Goodreads)"
+                    },
+                    {
+                        "Inclusion": "Optional Add on",
+                        "Value": "$150 for tailor-made book promotional video (15 seconds max)"
+                    },
+                    {
+                        "Inclusion": "Optional Add on",
+                        "Value": "Ad boosting (depends on the author's budget)"
+                    }
+                ]
+            },
+            {
+                "Service": "Website Design",
+                "Values" : 
+                [
+                    {
+                        "Included": "Yes",
+                        "Value": "4-page website (Homepage, Book page, About Page, Contact Page)"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Domain name ($12\/year)"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Secure hosting ($120\/year)"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "SSL Certificate ($82\/year)"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Up to 10 exquisitely designed themes"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "PayPal Checkout for Book Page"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Custom domain email address ($72/year)"
+                    },
+                    {
+                        "Included": "No",
+                        "Value": "Email List Building"
+                    },
+                    {
+                        "Included": "No",
+                        "Value": "Monthly newsletter for subscribers"
+                    },
+                    {
+                        "Inclusion": "Add on",
+                        "Value": "4 blog posts\/month (1500 words each post) $400\/mo"
+                    },
+                    {
+                        "Inclusion": "Add on",
+                        "Value": "1 guest blog\/month (1500 words on authoritative sites) $500\/mo"
+                    }
+                ]
+            },
+            {
+                "Service": "Book Reviews",
+                "Values" : 
+                [
+                    {
+                        "Included": "Yes",
+                        "Value": "15 verified Amazon Reviews"
+                    },
+                    {
+                        "Inclusion": "Add on",
+                        "Value": "Book page optimization (target audience research, keyword research, book description editing, headline\/tagline writing\/rewriting)"
+                    }
+                ]
+            },
+            {
+                "Service": "Email Marketing",
+                "Values" : 
+                [
+                    {
+                        "Included": "Yes",
+                        "Value": "4 email blasts monthly"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Email design and copy"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Exclusive access to emails of book fair attendees"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Campaign performance report"
+                    }
+                ]
+            }
+        ]
     },
     {
-        "Service": "Social Platforms",
-        "Good": "Facebook &amp; Instagram",
-        "Grand": "Facebook &amp; Instagram",
-        "Great": "Facebook &amp; Instagram"
-    },
-    {
-        "Service": "Dedicated account manager",
-        "Good": "Up to 2 hours of monthly consultation",
-        "Grand": "Up to 3 hours of monthly consultation",
-        "Great": "Up to 5 hours of monthly consultation"
-    },
-    {
-        "Service": "Page monitoring (messages, reviews, and comments)",
-        "Good": "12 days a month",
-        "Grand": "24 days a month",
-        "Great": "30 days in a month"
-    },
-    {
-        "Service": "Original, engaging content",
-        "Good": "text, graphics, 15-second video",
-        "Grand": "text, graphics, 15-second video",
-        "Great": "text, graphics, 15-second video"
-    },
-    {
-        "Service": "Optional Add on",
-        "Good": "$100\/month per platform (Pinterest, Twitter, Goodreads)",
-        "Grand": "$100\/month per platform (Pinterest, Twitter, Goodreads)",
-        "Great": "$100\/month per platform (Pinterest, Twitter, Goodreads)"
-    },
-    {
-        "Service": "Optional Add on",
-        "Good": "$150 for tailor-made book promotional video (15 seconds max)",
-        "Grand": "$150 for tailor-made book promotional video (15 seconds max)",
-        "Great": "$150 for tailor-made book promotional video (15 seconds max)"
-    },
-    {
-        "Service": "Optional Add on",
-        "Good": "Ad boosting (depends on the author's budget)",
-        "Grand": "Ad boosting (depends on the author's budget)",
-        "Great": "Ad boosting (depends on the author's budget)"
-    },
-    {
-        "Service": "Website Design",
-        "Highlight": 1
-    },
-    {
-        "Good": "4-page website (Homepage, Book page, About Page, Contact Page)",
-        "Grand": "4-page website (Homepage, Book page, About Page, Contact Page)",
-        "Great": "Fully customized e-commerce website"
-    },
-    {
-        "Good": "Domain name ($12\/year)",
-        "Grand": "Domain name ($12\/year)",
-        "Great": "Domain name ($12\/year)"
-    },
-    {
-        "Good": "Secure hosting ($120\/year)",
-        "Grand": "Secure hosting ($120\/year)",
-        "Great": "Secure hosting ($120\/year)"
-    },
-    {
-        "Good": "SSL Certificate ($82\/year)",
-        "Grand": "SSL Certificate ($82\/year)",
-        "Great": "SSL Certificate ($82\/year)"
-    },
-    {
-        "Good": "Up to 4 elegantly designed themes to choose from",
-        "Grand": "Up to 10 exquisitely designed themes",
-        "Great": "Up to 12 exclusively designed themes to choose from"
-    },
-    {
-        "Good": "custom domain email address ($72\/year)",
-        "Grand": "PayPal Checkout for Book Page",
-        "Great": "PayPal Checkout for Book Page"
-    },
-    {
-        "Grand": "custom domain email address ($72\/year)",
-        "Great": "custom domain email address (free)"
-    },
-    {
-        "Great": "Email List Building"
-    },
-    {
-        "Great": "Monthly newsletter for subscribers"
-    },
-    {
-        "Service": "Add on",
-        "Good": "4 blog posts\/month (1500 words each post) $400\/mo",
-        "Highlight": 1
-    },
-    {
-        "Good": "1 guest blog\/month (1500 words on authoritative sites) $500\/mo",
-        "Highlight": 1
-    },
-    {
-        "Service": "Book Reviews",
-        "Highlight": 1
-    },
-    {
-        "Good": "10 verified Amazon Reviews",
-        "Grand": "15 verified Amazon Reviews",
-        "Great": "25 verified Amazon Reviews"
-    },
-    {
-        "Service": "Add on",
-        "Good": "Book page optimization (target audience research, keyword research, book description editing, headline\/tagline writing\/rewriting)",
-        "Highlight": 1
-    },
-    {
-        "Service": "Email Marketing",
-        "Highlight": 1
-    },
-    {
-        "Good": "2 email blasts monthly",
-        "Grand": "4 email blasts monthly",
-        "Great": "8 email blasts monthly"
-    },
-    {
-        "Good": "Email design and copy",
-        "Grand": "Email design and copy",
-        "Great": "Email design and copy"
-    },
-    {
-        "Good": "Exclusive access to emails of book fair attendees",
-        "Grand": "Exclusive access to emails of book fair attendees",
-        "Great": "Exclusive access to emails of book fair attendees"
-    },
-    {
-        "Good": "Campaign performance report",
-        "Grand": "Campaign performance report",
-        "Great": "Campaign performance report"
+        "Type" : "Great",
+        "Price" : "$14,999",
+        "Month": "12 months",
+        "Services":
+        [
+            {
+                "Service": "Social Media Marketing",
+                "Values" : 
+                [
+                    {
+                        "Included": "Yes",
+                        "Inclusion": "Number of Posts\/month",
+                        "Value": 330
+                    },
+                    {
+                        "Included": "Yes",
+                        "Inclusion": "Social Platforms",
+                        "Value": "Facebook &amp; Instagram"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Inclusion": "Dedicated account manager",
+                        "Value": "Up to 5 hours of monthly consultation"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Inclusion": "Page monitoring (messages, reviews, and comments)",
+                        "Value": "30 days in a month"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Inclusion": "Original, engaging content",
+                        "Value": "text, graphics, 15-second video"
+                    },
+                    {
+                        "Inclusion": "Optional Add on",
+                        "Value": "$100\/month per platform (Pinterest, Twitter, Goodreads)"
+                    },
+                    {
+                        "Inclusion": "Optional Add on",
+                        "Value": "$150 for tailor-made book promotional video (15 seconds max)"
+                    },
+                    {
+                        "Inclusion": "Optional Add on",
+                        "Value": "Ad boosting (depends on the author's budget)"
+                    }
+                ]
+            },
+            {
+                "Service": "Website Design",
+                "Values" : 
+                [
+                    {
+                        "Included": "Yes",
+                        "Value": "Fully customized e-commerce <br> website"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Domain name ($12\/year)"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Secure hosting ($120\/year)"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "SSL Certificate ($82\/year)"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Up to 12 exquisitely designed themes"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "PayPal Checkout for Book Page"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Custom domain email address ($72/year)"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Email List Building"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Monthly newsletter for subscribers"
+                    },
+                    {
+                        "Inclusion": "Add on",
+                        "Value": "4 blog posts\/month (1500 words each post) $400\/mo"
+                    },
+                    {
+                        "Inclusion": "Add on",
+                        "Value": "1 guest blog\/month (1500 words on authoritative sites) $500\/mo"
+                    }
+                ]
+            },
+            {
+                "Service": "Book Reviews",
+                "Values" : 
+                [
+                    {
+                        "Included": "Yes",
+                        "Value": "25 verified Amazon Reviews"
+                    },
+                    {
+                        "Inclusion": "Add on",
+                        "Value": "Book page optimization (target audience research, keyword research, book description editing, headline\/tagline writing\/rewriting)"
+                    }
+                ]
+            },
+            {
+                "Service": "Email Marketing",
+                "Values" : 
+                [
+                    {
+                        "Included": "Yes",
+                        "Value": "8 email blasts monthly"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Email design and copy"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Exclusive access to emails of book fair attendees"
+                    },
+                    {
+                        "Included": "Yes",
+                        "Value": "Campaign performance report"
+                    }
+                ]
+            }
+        ]
     }
 ]

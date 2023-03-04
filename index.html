@@ -17,45 +17,66 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-    <nav class="navbar" id="nav_bar">
-        <div class="container">
-            <div class="_nav-item">
-                <div class="logo-wrapper">
-                    <a href="#">
-                        <img class="ratio ratio-16x9 img-fluid" src="./svg/logo.svg" alt="">
-                        <!-- <span>thewriterpress.</span> -->
-                    </a>
+<body id="html_body">
+    <header>
+        <nav class="navbar" id="nav_bar">
+            <div class="container">
+                <div class="_nav-item">
+                    <div class="logo-wrapper">
+                        <a href="/">
+                            <img class="ratio ratio-16x9 img-fluid" src="./svg/logo.svg" alt="">
+                            <!-- <span>thewriterpress.</span> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="_nav-item">
+                    <div class="nav-item-sp" id="nav-item-sp">
+                        <span>
+                            <i class="bi bi-list"></i>
+                        </span>
+                    </div>
+                    <div class="nav-item-menu d-flex" id="nav-item-menu ">
+                        <ul class="d-flex">
+                            <li class="p-3">
+                                <a href="#banner">Home</a>
+                            </li>
+                            <li class="p-3">
+                                <a href="#publishing_packages">Pricing</a>
+                            </li>
+                        </ul>
+                        <button class="btn rounded-0 bg-reverse-1 w-100 ps-3 pe-3 text-uppercase" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            GET STARTED
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="_nav-item">
-                <div class="nav-item-sp">
-                    <span>
-                        <i class="bi bi-list"></i>
-                    </span>
-                </div>
-                <div class="nav-item-menu d-flex">
-                    <ul class="d-flex">
-                        <li class="p-3">
-                            <a href="#banner">Home</a>
-                        </li>
-                        <li class="p-3">
-                            <a href="#publishing_packages">Pricing</a>
-                        </li>
-                    </ul>
-                    <button class="btn rounded-0 bg-reverse-1 w-100 ps-3 pe-3 text-uppercase" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        GET STARTED
-                    </button>
-                </div>
-            </div>
+        </nav>
+    </header>
+    <div class="nav-item-menu-sp" id="nav-item-menu-sp">
+        <div class="nav-item-sp-wrapper p-3">
+            <span id="nav-item-menu-close">
+                <i class="bi bi-x"></i>
+            </span>
+            <ul class="">
+                <li class="p-3">
+                    <a href="#banner">Home</a>
+                </li>
+                <li class="p-3">
+                    <a href="#publishing_packages">Pricing</a>
+                </li>
+            </ul>
+            <button class="btn rounded-0 bg-reverse-1 w-100 ps-3 pe-3 text-uppercase" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                GET STARTED
+            </button>
         </div>
-    </nav>
+    </div>
     <div class="division d-flex">
         <div class="division-item w-50 p-1 bg-1"></div>
         <div class="division-item w-50 p-1 bg-2"></div>
     </div>
-    <section class="banner swiper" id="#banner">
+    <section class="banner swiper" id="banner">
         <div class="banner-wrapper swiper-wrapper">
             <div class="banner-item swiper-slide">
                 <div class="container d-md-flex flex-md-row align-items-center min-vh-75">
@@ -287,8 +308,11 @@
                     <h2 class="fs-1">PR for Writers</h2>
                 </div>
                 <div class="writer-wrapper overflow-auto" data-aos="fade-down">
-                    <table class="table table-borderless" id="table_pr">
-                    </table>
+                    <!-- <table class="table table-borderless" id="table_pr">
+                    </table> -->
+                    <div class="card-wrapper d-md-flex flex-md-row flex-wrap w-100 justify-content-between p-3"
+                    id="table_pr" data-aos="fade-down">
+                </div>
                 </div>
             </div>
         </div>
@@ -332,7 +356,37 @@
     </div>
 
     <footer>
-
+        <nav class="navbar" id="nav_bar">
+            <div class="container">
+                <div class="_nav-item">
+                    <div class="logo-wrapper">
+                        <a href="/">
+                            <img class="ratio ratio-16x9 img-fluid" src="./svg/logo.svg" alt="">
+                            <!-- <span>thewriterpress.</span> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="_nav-item">
+                    <div class="nav-item-menu d-flex" id="nav-item-menu ">
+                        <ul class="d-flex">
+                            <li class="p-3">
+                                <a href="#banner">Home</a>
+                            </li>
+                            <li class="p-3">
+                                <a href="#publishing_packages">Pricing</a>
+                            </li>
+                        </ul>
+                        <button class="btn rounded-0 bg-reverse-1 w-100 ps-3 pe-3 text-uppercase" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            GET STARTED
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="reserved text-center p-2">
+            <p>© 2023 The Writer Press. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
