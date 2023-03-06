@@ -119,7 +119,7 @@ a {
 .nav-item-menu-sp {
     transition: 0.5s;
     position: fixed;
-    width: 75%;
+    width: 100%;
     background-color: #FAF9F7;
     right: -100vw;
     top: 0;
@@ -146,6 +146,10 @@ a {
     font-size: 2.5em;
     padding: 5px;
 
+}
+
+.nav-item-sp-wrapper .logo-wrapper {
+    width: 50%;
 }
 
 .sp_show {

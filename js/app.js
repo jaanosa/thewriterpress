@@ -10,12 +10,36 @@ var menu_close = document.getElementById('nav-item-menu-close');
 var menu_item  = document.getElementById('nav-item-menu-sp');
 var body       = document.getElementById('html_body');
 
+var logo          = document.getElementById('nav-item-menu-logo');
+var home          = document.getElementById('nav-item-menu-home');
+var home_section  = document.getElementById('banner');
+var pricing       = document.getElementById('nav-item-menu-pricing');
+var price_section = document.getElementById('publishing_packages');
+
 hamburger.addEventListener('click',function(){
     menu_item.classList.toggle('show');
     body.classList.toggle('sp_show');
 });
 
 menu_close.addEventListener('click',function(){
+    menu_item.classList.toggle('show');
+    body.classList.toggle('sp_show');
+});
+
+logo.addEventListener('click',function(){
+    body.scrollIntoView();
+    menu_item.classList.toggle('show');
+    body.classList.toggle('sp_show');
+});
+
+home.addEventListener('click',function(){
+    home_section.scrollIntoView();
+    menu_item.classList.toggle('show');
+    body.classList.toggle('sp_show');
+});
+
+pricing.addEventListener('click',function(){
+    price_section.scrollIntoView();
     menu_item.classList.toggle('show');
     body.classList.toggle('sp_show');
 });
